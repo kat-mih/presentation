@@ -216,10 +216,8 @@ li {
 .primary-colors,
 .secondary-colors,
 .brown-color,
-.color-wheel,
-.corectors {
-    border: 2px solid #e0d5ca;
-    margin-bottom: 2rem;
+.color-wheel {
+    margin-bottom: 3rem;
 }
 
 .primary-colors p,
