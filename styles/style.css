@@ -254,30 +254,27 @@ li {
 }
 
 .primary-colors__red {
-    background-color: red;
-    color: #fff;
+    background-color: #ff3035;
 }
 
 .primary-colors__yellow {
-    background-color: yellow;
+    background-color: #ffdf00;
 }
 
 .primary-colors__blue {
-    background-color: blue;
-    color: #fff;
+    background-color: #00b1f4;
 }
 
 .secondary-colors__orange {
-    background-color: orange;
+    background-color: #ff9824;
 }
 
 .secondary-colors__green {
-    background-color: green;
+    background-color: #71c93c;
 }
 
 .secondary-colors__purple {
-    background-color: purple;
-    color: #fff;
+    background-color: #853b98;
 }
 
 .brown-color img,
