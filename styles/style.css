@@ -1,0 +1,297 @@
+*, *::after, *::before {
+    box-sizing: content-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'serenity', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+    background: #f9f3ed;
+}
+
+h1, h2, h3 {
+    margin: 1rem 0;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font: 2rem;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+span {
+    font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+}
+
+/*  List */
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.hero__content h1 {
+    text-align: center;
+}
+
+.hero__content p {
+    font-size: 2rem;
+}
+
+.hero__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 10px;
+}
+
+.hero__grid img {
+    height: 200px;
+}
+
+.hero__grid .first,
+.hero__grid .third {
+        display: none;
+    }
+
+
+@media screen and (min-width: 768px){
+    .hero__content p {
+        font-size: 3rem;
+    }
+
+    .hero__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero__grid .first,
+    .hero__grid .third {
+        display: block;
+    }
+
+
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 3%;
+    padding: 2rem 1rem;
+    background: #fff;
+    box-shadow: 0 0 10px #ccc4bc;
+    border-radius: 5px;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px){
+    .container {
+        margin: 2rem auto;
+        max-width: 1024px;
+        padding: 2rem 4rem;
+    }
+}
+
+/* Divider */
+.divider {
+    border-bottom: 2px solid #e0d5ca;
+    margin: 1rem auto;
+    width: 80%;
+}
+
+/* Quote */
+.quote {
+    border-left: 3px solid #e0d5ca;
+    padding-left: 2rem;
+    margin: 0 0 0.5rem 0.5rem;
+    font-size: 1.75rem;
+}
+
+@media screen and (min-width: 768px){
+    .quote {
+        font-size: 2.5rem;
+    }
+}
+
+/* Important */
+.important {
+    border-left: 3px solid #a04239;
+    padding-left: 2rem;
+    margin: 0 0 0.5rem 0.5rem;
+    font-style: italic;
+}
+
+.important h3 {
+    font-weight: 700;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+}
+
+.grid img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.grid ul:first-child {
+    order: 2;
+}
+
+@media screen and (min-width: 768px){
+    .grid--1x2 {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 15px;
+    }
+
+    .grid ul:first-child {
+        order: 1;
+    }
+}
+
+/* Colors */
+.colors {
+    text-align: center;
+}
+
+.primary-colors,
+.secondary-colors,
+.brown-color,
+.color-wheel,
+.corectors {
+    border: 2px solid #e0d5ca;
+    margin-bottom: 2rem;
+}
+
+.primary-colors p,
+.secondary-colors p,
+.brown-color p {
+    font-size: 1.5rem;
+}
+
+.grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    padding: 1rem;
+}
+
+.grid--3x5 {
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 1rem;
+}
+
+.primary-colors__red,
+.primary-colors__yellow,
+.primary-colors__blue,
+.secondary-colors__orange,
+.secondary-colors__green,
+.secondary-colors__purple {
+    height: 40px;
+}
+
+.symbol {
+    font-weight: 700;
+    margin: auto;
+}
+
+.primary-colors__red {
+    background-color: red;
+    color: #fff;
+}
+
+.primary-colors__yellow {
+    background-color: yellow;
+}
+
+.primary-colors__blue {
+    background-color: blue;
+    color: #fff;
+}
+
+.secondary-colors__orange {
+    background-color: orange;
+}
+
+.secondary-colors__green {
+    background-color: green;
+}
+
+.secondary-colors__purple {
+    background-color: purple;
+    color: #fff;
+}
+
+.brown-color img,
+.color-wheel img,
+.corectors img {
+    width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+    .colors {
+        width: 60%;
+        margin: 0 auto;
+        font-size: 2rem;
+    }
+}
